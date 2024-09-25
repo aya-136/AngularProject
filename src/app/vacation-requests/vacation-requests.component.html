@@ -1,0 +1,93 @@
+<div class="container mt-5">
+
+  <!-- Search -->
+  <form class="d-flex align-items-center justify-content-between" role="search">
+    <div class="d-flex align-items-center">
+      <i class="fas fa-list me-2 fa-2x"></i>
+      <h3 class="text mb-0">Vacation Requests</h3>
+    </div>
+    <div class="search-bar d-flex align-items-center border rounded-pill bg-light px-3">
+      <i class="fas fa-search me-2 text-success"></i>
+      <input type="search" class="form-control border-0" [(ngModel)]="searchTerm" placeholder="Search"
+        name="searchTerm" />
+    </div>
+  </form>
+
+  <hr>
+
+  <!--Select-->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+      <input type="checkbox" class="me-2" id="select-all" [(ngModel)]="selectAll" (click)="toggleSelectAll()" />
+      <label for="select-all">Select All</label>
+    </div>
+    <div class="d-flex">
+      <button class="btn btn-outline-secondary btn-sm">
+        <i class="fas fa-filter fa-2x"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Cards Section -->
+  <div class="row">
+    @for(request of filterRequests(); track request){
+    <div class="col-md-4 vacation-card mb-3">
+      <div class="border-0 card shadow-lg bg-gradient">
+        <div class="card-body p-4">
+          <div class="d-flex mb-4 align-items-center">
+            <input class="form-check-input me-2" type="checkbox" [checked]="selectAll" />
+            <img [src]="request.imageUrl" alt="Profile Image" class="rounded-circle me-3" width="50" height="50" />
+            <h4 class="mb-0" [innerHTML]="request.name | highlight: searchTerm"></h4>
+          </div>
+          <div class="mb-2">
+            <strong>Submitted on:</strong> <span>{{ request.submittedOn }}</span>
+          </div>
+          <div class="mb-2">
+            <strong>Vacation Start:</strong> <span>{{ request.vacationStart }}</span>
+          </div>
+          <div class="mb-2">
+            <strong>Vacation End:</strong> <span>{{ request.vacationEnd }}</span>
+          </div>
+          <div class="mb-2">
+            <strong>Duration:</strong> <span>{{ request.duration }}</span>
+          </div>
+          <div class="mb-2">
+            <strong>Salary:</strong> <span>{{ request.salary }}</span>
+          </div>
+          <div class="d-grid gap-2 d-md-block justify-content-md-between mt-3">
+            <button class="btn btn-success me-2 rounded">Approve</button>
+            <button class="btn btn-outline-success rounded">Decline</button>
+          </div>
+        </div>
+      </div>
+    </div>}
+  </div>
+
+  <!--Pagination-->
+  <div class="container bg-light py-3 mt-4 d-flex justify-content-center">
+
+    <ul class="pagination rounded-pill justify-content-center bg-light px-3">
+      <li class="page-item">
+        <a id="prevPage" class="page-link text-dark border-0" href="#">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link text-dark border-0" href="/vacation request.html">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link text-dark border-0" href="/vacation request2.html">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link text-dark border-0" href="/vacation request3.html">3</a>
+      </li>
+      <li class="page-item">
+        <a id="nextPage" class="page-link text-dark border-0" href="#">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</div>

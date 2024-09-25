@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { VacationRequestComponent } from './vacation-requests/vacation-requests.component';
+import { HighlighterPipe } from './highlighter.pipe';
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: true,
+  imports: [VacationRequestComponent, HighlighterPipe]
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'vacation-request';
 }

@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Sami Al-ali",
+        "submittedOn": "1/3/2024",
+        "duration": "2 Weeks",
+        "vacationStart": "1/4/2023",
+        "vacationEnd": "14/4/2023",
+        "salary": "1000 AED",
+        "imageUrl": "user1.jpeg"
+    },
+    {
+        "name": "Mona Salah",
+        "submittedOn": "15/3/2024",
+        "duration": "1 Week",
+        "vacationStart": "20/3/2024",
+        "vacationEnd": "27/3/2024",
+        "salary": "1500 AED",
+        "imageUrl": "user2.jpeg"
+    },
+    {
+        "name": "Jamal Noor",
+        "submittedOn": "5/4/2024",
+        "duration": "3 Weeks",
+        "vacationStart": "10/4/2024",
+        "vacationEnd": "30/4/2024",
+        "salary": "2000 AED",
+        "imageUrl": "user3.jpeg"
+    },
+    {
+        "name": "Mariam El-Sayed",
+        "submittedOn": "25/2/2024",
+        "duration": "1 Month",
+        "vacationStart": "1/3/2024",
+        "vacationEnd": "31/3/2024",
+        "salary": "3000 AED",
+        "imageUrl": "user4.jpeg"
+    },
+    {
+        "name": "Ali Amourah",
+        "submittedOn": "10/5/2024",
+        "duration": "10 Days",
+        "vacationStart": "15/5/2024",
+        "vacationEnd": "25/5/2024",
+        "salary": "1800 AED",
+        "imageUrl": "user5.jpeg"
+    },
+    {
+        "name": "Noah Al-faisel",
+        "submittedOn": "5/4/2024",
+        "duration": "3 Weeks",
+        "vacationStart": "10/4/2024",
+        "vacationEnd": "30/4/2024",
+        "salary": "2000 AED",
+        "imageUrl": "user6.jpeg"
+    },
+    {
+        "name": "Lina Ahmed",
+        "submittedOn": "25/2/2024",
+        "duration": "1 Month",
+        "vacationStart": "1/3/2024",
+        "vacationEnd": "31/3/2024",
+        "salary": "3000 AED",
+        "imageUrl": "user7.jpeg"
+    },
+    {
+        "name": "Faisal Al-Omari",
+        "submittedOn": "18/7/2024",
+        "duration": "2 Weeks",
+        "vacationStart": "20/7/2024",
+        "vacationEnd": "3/8/2024",
+        "salary": "2500 AED",
+        "imageUrl": "user8.jpeg"
+    }
+]
